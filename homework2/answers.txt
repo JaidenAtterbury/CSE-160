@@ -1,0 +1,87 @@
+Name: Jaiden Atterbury
+CSE 160
+Homework 2
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file and your modified
+dna_analysis.py program.
+
+
+Problem 2:
+
+GC-content: 0.43059987061138255
+
+Problem 3:
+
+a) When I commented out the gc_count variable and re-ran the program from the 
+command line an error appeared in the terminal. This error stated: "NameError: 
+name 'gc_count' is not defined." This error occured because a variable was 
+manipulated in the for loop, but the variable itself was never intialized
+because we just commented it out. In particular, this variable is used to keep
+track of the number of G or C nucleotides in the given string, but when the for
+loop goes to update the count, the variable was never initialized so execution
+terminates and an error message appears in the terminal.
+
+b) When I commented out the nucleotides variable and re-ran the program from
+the command line an error appeared in the terminal. This error stated: "Name
+Error: name 'nucleotides' is not defined." This error occured because a 
+the variable "nucleotides" was assigned a string and was used as the sequence
+in the main for loop, but the variable itself was never defined because we just
+commented it out. In particular, this variable is used to read in the DNA data
+from a given file, and convert all the nucleotide information into one string,
+but when the for loop uses the variable as a sequence, the variable itself was
+never assigned, and thus, execution halted and an error message appeared in the
+terminal.
+
+Problem 4:
+
+AT-content: 0.5694001293886175
+
+Problem 5:
+
+G count: 5738773
+C count: 5879128
+A count: 7701287
+T count: 7661547
+
+Problem 6:
+
+a.) After running each of the .fastq files the only one that did NOT have any
+differences between the sum, total, and length measurements was the 
+test-small.fastq file. All of the other .fastq files had the same total for the
+total_count and len(nucleotides) variables/measurements, but the sum of G+C+A+T
+differed from these other measurements over all of the files mentioned. For 
+example, in the file sample_5.fastq the total_count and len(nucleotides) had a
+total count of 76, while the sum of G+C+A+T variable had a total count of 75.
+After inspecting the files, the reason for these differences in counts is the
+fact that the first draft of our program assumes there are only G,C,A and T 
+characters present in the nucleotides string. This turns out to not be the case
+as the string includes 'N' characters throughtout. Therefore, these
+characters are getting accounted for in only 2/3 of the variables, and thus
+causing a difference.
+
+b.) The quantity that should be used in the denominator of or GC and AT content
+variable is the sum_counts variable, as that will give us the accurate total
+count for G, C, A, and T characters in the string. The other two measurements 
+should not be used in the denominator of our GC and AT content variable as they
+account for these N values and thus, misrepresent the total of G, C, A, and T
+characters in the string.
+
+c.) My program incorrectly computes and prints the values of GC and AT content
+as I mistakenly used total_count in the denominator instead of the sum_counts
+variable.
+
+Problem 7:
+
+AT/GC Ratio: 1.3223416174746196
+
+Problem 8:
+
+GC Classification: moderate GC content
+
+Collaboration:
+
+While working on this assignment, I didn't collaborate with anyone.
