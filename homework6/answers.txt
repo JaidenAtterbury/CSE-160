@@ -1,0 +1,30 @@
+Name: Jaiden Atterbury
+CSE 160
+Homework 6
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+Answer to Problem 7:
+
+As calculated in Problem 6, the 2009 Iranian election null hypothesis rejection
+p-value is 0.0367. Since the p-value is less than the significance level of
+alpha = 0.05 we reject the null hypothesis. Since we rejected the null
+hypothesis, there is sufficient evidence to suggest that the data from the 2009
+Iranian election were fraudulent. In particular, we are 96.33% confident that
+the data are fraudulent.
+
+Answer to Problem 8:
+
+As calculated in Problem 8, the 2008 United States election null hypothesis
+rejection p-value is 0.4836. Since the p-value is greater than the significance
+level of alpha = 0.05 we fail to reject the null hypothesis. Since we have
+failed to reject the null hypothesis, there is insufficient evidence to suggest
+that the data from the 2008 United States election were fraudulent.
+
+Collaboration:
+
+On Homework 6, I collaborated with no one when writing the code. However,
+Tanner Huck and I briefly looked at each others code to make sure we weren't
+missing anything/got similar output.

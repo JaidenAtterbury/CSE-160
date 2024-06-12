@@ -1,0 +1,5 @@
+Ecuador 4 3 11 4
+USA 1 0
+Argentina 2 10 6
+Senegal 0 3
+Argentina 7 0 9
